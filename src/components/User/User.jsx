@@ -8,6 +8,8 @@ export default function User() {
   const { user, setUser } = useUser();
   const { entries, setEntries } = useEntries();
 
+  function updateUser() {}
+
   return (
     <div>
       <div className="username-box">
@@ -20,7 +22,7 @@ export default function User() {
         />
       </div>
       <div className="entry-box">
-        <label htmlFor="user-entry">Entry</label>
+        <label htmlFor="user-entry">Entry: </label>
         <input
           type="text"
           id="user-entry"
