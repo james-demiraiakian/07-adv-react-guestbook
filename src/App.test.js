@@ -16,7 +16,7 @@ test('Tests that entries are rendered', () => {
   expect(headerText).toBeInTheDocument();
 
   let buttons = screen.getAllByRole('button');
-  expect(buttons.length).toBe(1);
+  expect(buttons.length).toBe(2);
 
   const nameEntry = screen.getByRole('textbox', { name: /user name:/i });
   userEvent.type(nameEntry, 'Jimmothy');
@@ -37,5 +37,5 @@ test('Tests that entries are rendered', () => {
   expect(headings.length).toBe(1);
 
   buttons = screen.getAllByRole('button');
-  expect(buttons.length).toBe(2);
+  expect(buttons.length).toBe(3);
 });

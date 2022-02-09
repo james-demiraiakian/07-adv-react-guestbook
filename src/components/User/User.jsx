@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useDarkMode from 'use-dark-mode';
 import { v4 as uuid } from 'uuid';
 import { useEntries } from '../../context/EntryContext';
 import { useUser } from '../../context/UserContext';
@@ -8,6 +9,7 @@ export default function User() {
   const [userEntry, setUserEntry] = useState('');
   const { user, setUser } = useUser();
   const { entries, setEntries } = useEntries();
+  const darkMode = useDarkMode();
 
   function updateUser() {
     if (!userEntry) return;
@@ -28,6 +30,7 @@ export default function User() {
           <div className="username-box">
             <label htmlFor="username">User Name: </label>
             <input
+              className={darkMode.value ? 'input-dark-mode' : 'button-light-mode'}
               type="text"
               id="username"
               value={username}
@@ -38,15 +41,19 @@ export default function User() {
         <div className="entry-box">
           <label htmlFor="user-entry">Entry: </label>
           <input
+            className={darkMode.value ? 'input-dark-mode' : 'button-light-mode'}
             type="text"
             id="user-entry"
             value={userEntry}
             onChange={(e) => setUserEntry(e.target.value)}
           />
         </div>
-        <button type="submit">Sign</button>
+        <button className={darkMode.value ? 'button-dark-mode' : 'button-light-mode'} type="submit">
+          Sign
+        </button>
         {user && (
           <button
+            className={darkMode.value ? 'button-dark-mode' : 'button-light-mode'}
             type="button"
             onClick={() => {
               setUser('');

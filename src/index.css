@@ -1,13 +1,39 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.dark-mode {
+  background-color: #151e34ff;
+  color: #a6b2ebff;
+  /* text-field-color */
+  /* entry-card color */
+}
+
+.button-dark-mode {
+  background-color: rgb(31, 51, 167);
+  color: #a6b2ebff;
+}
+
+.input-dark-mode {
+  background-color: #1f7ea7ff;
+}
+
+.light-mode {
+  background-color: rgb(255, 251, 202);
+  --button-color: white;
+}
+
+.button-light-mode {
+  background-color: rgb(255, 251, 202);
+}
+.input-light-mode {
+  background-color: rgb(255, 253, 231);
 }
