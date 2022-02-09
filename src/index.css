@@ -13,12 +13,25 @@ code {
 .dark-mode {
   background-color: #151e34ff;
   color: #a6b2ebff;
-  --button-color: #3071e8ff;
   /* text-field-color */
   /* entry-card color */
 }
 
+.button-dark-mode {
+  background-color: rgb(31, 51, 167);
+  color: #a6b2ebff;
+}
+
+.input-dark-mode {
+  background-color: #1f7ea7ff;
+}
+
 .light-mode {
-  background-color: cream;
+  background-color: rgb(255, 251, 202);
   --button-color: white;
+}
+
+.button-light-mode {
+}
+.input-light-mode {
 }

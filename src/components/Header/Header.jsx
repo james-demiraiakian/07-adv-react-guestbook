@@ -14,7 +14,11 @@ export default function Header() {
   return (
     <>
       <div>{user ? <div>Welcome to the guestbook, {user}!</div> : <div>Welcome Guest!</div>}</div>
-      <button type="button" onClick={handleDark}>
+      <button
+        className={darkMode.value ? 'button-dark-mode' : 'button-light-mode'}
+        type="button"
+        onClick={handleDark}
+      >
         {!darkMode.value ? <>Dark</> : <>Light</>}
       </button>
     </>
