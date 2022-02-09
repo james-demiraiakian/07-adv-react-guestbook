@@ -44,9 +44,12 @@ export default function User() {
             onChange={(e) => setUserEntry(e.target.value)}
           />
         </div>
-        <button type="submit">Sign</button>
+        <button className="button-color" type="submit">
+          Sign
+        </button>
         {user && (
           <button
+            className="button-color"
             type="button"
             onClick={() => {
               setUser('');
