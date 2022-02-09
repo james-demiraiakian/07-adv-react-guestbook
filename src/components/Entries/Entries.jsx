@@ -6,8 +6,8 @@ export default function Entries() {
 
   return (
     <div>
-      {entries.map((e, i) => (
-        <div key={i}>
+      {entries.map((e) => (
+        <div key={e.id}>
           <h3>{e.message}</h3>
           <p>~{e.username}</p>
         </div>

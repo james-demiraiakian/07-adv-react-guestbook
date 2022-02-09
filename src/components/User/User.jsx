@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { v4 as uuid } from 'uuid';
 import { useEntries } from '../../context/EntryContext';
 import { useUser } from '../../context/UserContext';
 
@@ -11,7 +12,7 @@ export default function User() {
   function updateUser() {
     if (!userEntry) return;
     setUser(username);
-    setEntries([...entries, { username, message: userEntry }]);
+    setEntries([...entries, { username, message: userEntry, id: uuid() }]);
     setUserEntry('');
   }
 
