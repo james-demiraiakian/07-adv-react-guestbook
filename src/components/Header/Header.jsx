@@ -4,7 +4,6 @@ import useDarkMode from 'use-dark-mode';
 
 export default function Header() {
   const darkMode = useDarkMode(false);
-  console.log(darkMode);
 
   const handleDark = () => {
     darkMode.toggle();

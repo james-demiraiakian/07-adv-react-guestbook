@@ -32,6 +32,8 @@ code {
 }
 
 .button-light-mode {
+  background-color: rgb(255, 251, 202);
 }
 .input-light-mode {
+  background-color: rgb(255, 253, 231);
 }
