@@ -1,15 +1,18 @@
 import React from 'react';
+import useDarkMode from 'use-dark-mode';
 import { useEntries } from '../../context/EntryContext';
+import './Entries.css';
 
 export default function Entries() {
   const { entries } = useEntries();
+  const darkMode = useDarkMode();
 
   return (
-    <div>
+    <div className='entry-box'>
       {entries.map((e) => (
-        <div key={e.id} className="entry-card">
+        <div key={e.id} className={darkMode.value ? 'entry-card-dark' : 'entry-card-light'}>
           <h3>{e.message}</h3>
-          <p>~{e.username}</p>
+          <p className='user-name'>~{e.username}</p>
         </div>
       ))}
     </div>
