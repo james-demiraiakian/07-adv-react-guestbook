@@ -28,7 +28,9 @@ code {
 
 .light-mode {
   background-color: rgb(255, 251, 202);
-  --button-color: white;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6020862a-66b6-43b9-9a30-f77db3e81c24/d69jqez-dd39279c-3065-4854-9875-6fbd28f40edf.png/v1/fill/w_1024,h_1449,q_80,strp/yellow_lined_paper_by_andie200_d69jqez-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ0OSIsInBhdGgiOiJcL2ZcLzYwMjA4NjJhLTY2YjYtNDNiOS05YTMwLWY3N2RiM2U4MWMyNFwvZDY5anFlei1kZDM5Mjc5Yy0zMDY1LTQ4NTQtOTg3NS02ZmJkMjhmNDBlZGYucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.GfRzumSodzOj6Z-p4FghqSR8FX-MEVoBG5a50TSj-BI');  
+  background-repeat: repeat-y;
+  background-position: 25vw 0vh;
 }
 
 .button-light-mode {

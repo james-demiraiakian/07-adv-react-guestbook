@@ -1,6 +1,7 @@
 import React from 'react';
 import { useUser } from '../../context/UserContext';
 import useDarkMode from 'use-dark-mode';
+import './Header.css';
 
 export default function Header() {
   const darkMode = useDarkMode(false);
@@ -11,7 +12,7 @@ export default function Header() {
 
   const { user } = useUser();
   return (
-    <>
+    <div className='header'>
       <div>{user ? <div>Welcome to the guestbook, {user}!</div> : <div>Welcome Guest!</div>}</div>
       <button
         className={darkMode.value ? 'button-dark-mode' : 'button-light-mode'}
@@ -20,6 +21,6 @@ export default function Header() {
       >
         {!darkMode.value ? <>Dark</> : <>Light</>}
       </button>
-    </>
+    </div>
   );
 }

@@ -1,0 +1,20 @@
+.entry-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-name {
+    text-align: right;
+}
+
+.entry-card-light {
+    border-top: 2px solid black;
+    width: 45vw;
+    margin-top: 10px;
+}
+
+.entry-card-dark {
+
+}
