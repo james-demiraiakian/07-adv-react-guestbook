@@ -22,7 +22,7 @@ export default function Login() {
   };
   return (
     <div>
-      <h2>Must login to visit (INSERT PAGE VARIABLE FROM HISTORY HERE)</h2>
+      <h2>Please Login</h2>
       <form onSubmit={handleLogin}>
         <label htmlFor="email">Email: </label>
         <input onChange={(e) => handleChange(e)} name="email" type="email" id="email" />
