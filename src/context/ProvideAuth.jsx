@@ -6,13 +6,15 @@ export function ProvideAuth({ children }) {
   const [user, setUser] = useState(null);
 
   const login = (email, password) => {
-    const loginSuccess =
+    if (
       email === process.env.REACT_APP_AUTH_EMAIL &&
-      password === process.env.REACT_APP_AUTH_PASSWORD;
-    if (loginSuccess) {
+      password === process.env.REACT_APP_AUTH_PASSWORD
+    ) {
       setUser({ email });
+      return true;
+    } else {
+      return false;
     }
-    return loginSuccess;
   };
 
   const logout = (callback) => {

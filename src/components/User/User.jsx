@@ -11,13 +11,6 @@ export default function User() {
   const { entries, setEntries } = useEntries();
   const darkMode = useDarkMode();
 
-  const thing = 10;
-  {
-    {
-      thing;
-    }
-  }
-
   function updateUser() {
     if (!userEntry) return;
     setUser(username);
