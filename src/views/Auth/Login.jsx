@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
-import useAuth from '../../hooks/useAuth';
+import { useLocation, useHistory } from 'react-router-dom';
+import { useAuth } from '../../hooks/useAuth';
 import { useForm } from '../../hooks/useForm';
 
 export default function Login() {
