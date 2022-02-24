@@ -12,25 +12,32 @@ test('Tests that entries are rendered', () => {
       </EntryProvider>
     </UserProvider>
   );
-  let headerText = screen.getByText(/welcome guest!/i);
+  const emailInput = screen.getByRole('textbox', { name: /email/i });
+  expect(emailInput).toBeInTheDocument();
+
+  const passwordInput = screen.getByLabelText('password');
+  expect(passwordInput).toBeInTheDocument();
+
+  const logButton = screen.getByRole('button', { name: /sign in/i });
+  expect(logButton).toBeInTheDocument();
+
+  userEvent.type(emailInput, 'james.armen@gmail.com');
+  userEvent.type(passwordInput, '12345678');
+  userEvent.click(logButton);
+
+  let headerText = screen.getByText(/welcome to the guestbook, james.armen@gmail.com!/i);
   expect(headerText).toBeInTheDocument();
 
   let buttons = screen.getAllByRole('button');
-  expect(buttons.length).toBe(2);
-
-  const nameEntry = screen.getByRole('textbox', { name: /user name:/i });
-  userEvent.type(nameEntry, 'Jimmothy');
+  expect(buttons.length).toBe(3);
 
   const messageEntry = screen.getByRole('textbox', { name: /entry:/i });
   userEvent.type(messageEntry, 'Hello!');
 
-  const signButton = screen.getByRole('button', { name: /sign/i });
+  const signButton = screen.getByRole('button', { name: /sign guestbook/i });
   userEvent.click(signButton);
 
-  headerText = screen.getByText(/welcome to the guestbook, jimmothy!/i);
-  expect(headerText).toBeInTheDocument();
-
-  expect(screen.getByText(/~jimmothy/i)).toBeInTheDocument();
+  expect(screen.getByText(/~james.armen@gmail.com/i)).toBeInTheDocument();
   expect(screen.getByText(/hello!/i)).toBeInTheDocument();
 
   const headings = screen.getAllByRole('heading');

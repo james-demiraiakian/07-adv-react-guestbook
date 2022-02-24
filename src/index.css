@@ -14,10 +14,15 @@ code {
 }
 
 .dark-mode {
-  background: rgb(255,56,160);
-background: radial-gradient(circle, rgba(255,56,160,1) 0%, rgba(105,35,148,1) 34%, rgba(11,18,40,1) 100%);
-background-position-x: left;
-background-size: 100vh;
+  background: rgb(255, 56, 160);
+  background: radial-gradient(
+    circle,
+    rgba(255, 56, 160, 1) 0%,
+    rgba(105, 35, 148, 1) 34%,
+    rgba(11, 18, 40, 1) 100%
+  );
+  background-position-x: left;
+  background-size: 100vh;
   color: #a6b2ebff;
   font-family: 'Share Tech', sans-serif;
 }
@@ -27,6 +32,13 @@ background-size: 100vh;
   color: #a6b2ebff;
   position: fixed;
   right: 0;
+  top: 0;
+}
+.style-button-dark-mode2 {
+  background-color: rgb(31, 51, 167);
+  color: #a6b2ebff;
+  position: fixed;
+  left: 0;
   top: 0;
 }
 
@@ -43,7 +55,7 @@ background-size: 100vh;
 .light-mode {
   background-color: rgb(255, 251, 202);
   color: rgb(112, 112, 112);
-  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6020862a-66b6-43b9-9a30-f77db3e81c24/d69jqez-dd39279c-3065-4854-9875-6fbd28f40edf.png/v1/fill/w_1024,h_1449,q_80,strp/yellow_lined_paper_by_andie200_d69jqez-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ0OSIsInBhdGgiOiJcL2ZcLzYwMjA4NjJhLTY2YjYtNDNiOS05YTMwLWY3N2RiM2U4MWMyNFwvZDY5anFlei1kZDM5Mjc5Yy0zMDY1LTQ4NTQtOTg3NS02ZmJkMjhmNDBlZGYucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.GfRzumSodzOj6Z-p4FghqSR8FX-MEVoBG5a50TSj-BI');  
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6020862a-66b6-43b9-9a30-f77db3e81c24/d69jqez-dd39279c-3065-4854-9875-6fbd28f40edf.png/v1/fill/w_1024,h_1449,q_80,strp/yellow_lined_paper_by_andie200_d69jqez-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ0OSIsInBhdGgiOiJcL2ZcLzYwMjA4NjJhLTY2YjYtNDNiOS05YTMwLWY3N2RiM2U4MWMyNFwvZDY5anFlei1kZDM5Mjc5Yy0zMDY1LTQ4NTQtOTg3NS02ZmJkMjhmNDBlZGYucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.GfRzumSodzOj6Z-p4FghqSR8FX-MEVoBG5a50TSj-BI');
   background-repeat: repeat-y;
   background-position: 25vw 0vh;
   font-family: 'Redressed', cursive;
@@ -59,6 +71,14 @@ background-size: 100vh;
   color: rgb(112, 112, 112);
   position: fixed;
   right: 0;
+  top: 0;
+}
+
+.style-button-light-mode2 {
+  background-color: rgb(255, 251, 202);
+  color: rgb(112, 112, 112);
+  position: fixed;
+  left: 0;
   top: 0;
 }
 
