@@ -3,6 +3,7 @@ import useDarkMode from 'use-dark-mode';
 import { v4 as uuid } from 'uuid';
 import { useEntries } from '../../context/EntryContext';
 import { useUser } from '../../context/UserContext';
+import { useAuth } from '../../hooks/useAuth';
 
 export default function User() {
   const [username, setUsername] = useState('');
@@ -10,6 +11,8 @@ export default function User() {
   const { user, setUser } = useUser();
   const { entries, setEntries } = useEntries();
   const darkMode = useDarkMode();
+  const auth = useAuth();
+  const email = auth.user.email;
 
   function updateUser() {
     if (!userEntry) return;
@@ -28,14 +31,7 @@ export default function User() {
       <form onSubmit={submit}>
         {!user && (
           <div className="username-box">
-            <label htmlFor="username">User Name: </label>
-            <input
-              className={darkMode.value ? 'input-dark-mode' : 'button-light-mode'}
-              type="text"
-              id="username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
+            <p htmlFor="username">User Name: {email}</p>
           </div>
         )}
         <div className="entry-box">

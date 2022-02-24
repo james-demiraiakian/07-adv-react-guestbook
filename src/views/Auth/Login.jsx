@@ -14,7 +14,6 @@ export default function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     const loginSuccess = auth.login(formState.email, formState.password);
-    console.log(loginSuccess, formState);
     if (loginSuccess) {
       history.replace(from);
     } else {

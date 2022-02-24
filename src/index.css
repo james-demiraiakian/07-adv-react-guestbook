@@ -34,6 +34,13 @@ code {
   right: 0;
   top: 0;
 }
+.style-button-dark-mode2 {
+  background-color: rgb(31, 51, 167);
+  color: #a6b2ebff;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
 
 .button-dark-mode {
   background-color: rgb(31, 51, 167);
@@ -64,6 +71,14 @@ code {
   color: rgb(112, 112, 112);
   position: fixed;
   right: 0;
+  top: 0;
+}
+
+.style-button-light-mode2 {
+  background-color: rgb(255, 251, 202);
+  color: rgb(112, 112, 112);
+  position: fixed;
+  left: 0;
   top: 0;
 }
 
