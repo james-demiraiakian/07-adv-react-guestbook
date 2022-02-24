@@ -27,7 +27,13 @@ export default function Login() {
         <label htmlFor="email">Email: </label>
         <input onChange={(e) => handleChange(e)} name="email" type="email" id="email" />
         <label htmlFor="password">Password: </label>
-        <input onChange={(e) => handleChange(e)} name="password" type="password" id="password" />
+        <input
+          onChange={(e) => handleChange(e)}
+          aria-label="password"
+          name="password"
+          type="password"
+          id="password"
+        />
         <button type="submit">Sign In</button>
       </form>
       {error && <p>{error}</p>}

@@ -45,7 +45,7 @@ export default function User() {
           />
         </div>
         <button className={darkMode.value ? 'button-dark-mode' : 'button-light-mode'} type="submit">
-          Sign
+          Sign Guestbook
         </button>
         {user && (
           <button
